@@ -1,4 +1,5 @@
 if node['php']['ius'] != false and platform?("redhat", "centos", "fedora", "amazon", "scientific")
+  include_recipe "yum-epel"
   include_recipe "yum-ius"
 end
 
